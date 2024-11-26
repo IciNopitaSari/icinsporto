@@ -6,21 +6,280 @@
     list-style: none;
     outline: none;
     scroll-behavior: smooth;
-    font-family: 'Quicksand', sans-serif; 
+    font-family: 'Quicksand', sans-serif;
 }
 
 :root {
-    --bg-color: #f4f7fc;
-    --text-color: #444; 
-    --main-color: #ff6f61; 
-    --accent-color: #f9a825; 
-    --highlight-color: #4caf50; 
-    --shadow-color: rgba(0, 0, 0, 0.5); 
-    --border-color: #ffab91; 
+    --bg-color: #e1f5e1; 
+    --text-color: #4d5c5d; 
+    --main-color: #7dbd66; 
+    --accent-color: #c8e6c9; 
+    --highlight-color: #a8d08d; 
+    --shadow-color: rgba(0, 0, 0, 0.1); 
+    --border-color: #d5f5e5; 
 }
 
+/* Global Styles */
+body {
+    background: var(--bg-color); 
+    color: var(--text-color);
+    font-family: 'Quicksand', sans-serif;
+    line-height: 1.8;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.3s ease;
+}
+
+/* Header */
+header {
+    background: rgba(255, 255, 255, 0.95); /* Slightly translucent white */
+    box-shadow: 0 6px 12px var(--shadow-color);
+}
+
+.logo {
+    color: var(--main-color);
+}
+
+.navbar a {
+    color: var(--text-color);
+}
+
+.navbar a:hover {
+    background-color: var(--highlight-color);
+    color: #fff;
+}
+
+/* Home Section */
+.home {
+    background: linear-gradient(135deg, var(--highlight-color) 30%, var(--accent-color)); /* Soft olive green to pastel mint */
+}
+
+.home-content h1 {
+    color: var(--main-color);
+}
+
+.home-content h3 {
+    color: var(--text-color);
+}
+
+/* About Section */
+.about {
+    background: linear-gradient(135deg, #ffffff, var(--bg-color)); /* White fading to pastel green */
+    box-shadow: 0 4px 20px var(--shadow-color);
+}
+
+.about-content h2 {
+    color: var(--highlight-color);
+}
+
+/* Portfolio Section */
+.portfolio {
+    background: linear-gradient(135deg, var(--bg-color), var(--accent-color)); /* Soft pastel green to mint */
+}
+
+.portfolio h2 {
+    color: var(--main-color);
+}
+
+.portfolio .polaroid {
+    background: #ffffff;
+    border: 2px solid var(--border-color);
+    box-shadow: 0 6px 15px var(--shadow-color);
+}
+
+/* Contact Section */
+.contact {
+    background: linear-gradient(135deg, var(--main-color), var(--highlight-color)); /* Light moss green to soft olive green */
+    color: #fff;
+}
+
+.contact h2 {
+    color: #fff;
+}
+
+.contact input[type="submit"] {
+    background: var(--accent-color); /* Pastel mint */
+    color: #4d5c5d;
+}
+
+.contact input[type="submit"]:hover {
+    background: var(--main-color);
+    color: #fff;
+}
+
+/* Footer */
+.footer {
+    background: linear-gradient(135deg, var(--bg-color), var(--main-color)); /* Soft green to moss green */
+    color: #fff;
+}
+
+.footer .social a {
+    color: #fff;
+}
+
+.footer .social a:hover {
+    color: var(--highlight-color);
+}
+
+
+/* Global Styles */
+body {
+    background: var(--bg-color); 
+    color: var(--text-color);
+    font-family: 'Quicksand', sans-serif;
+    line-height: 1.8;
+    margin: 0;
+    transition: background-color 0.3s ease;
+}
+
+/* Header */
+header {
+    background: rgba(255, 255, 255, 0.9); 
+    box-shadow: 0 6px 12px var(--shadow-color);
+}
+
+.logo {
+    color: var(--main-color);
+}
+
+.navbar a {
+    color: var(--text-color);
+}
+
+.navbar a:hover {
+    background-color: var(--main-color);
+    color: #fff;
+}
+
+/* Home Section */
+.home {
+    background: linear-gradient(135deg, var(--highlight-color), var(--accent-color)); /* Gradient: blue to golden yellow */
+}
+
+.home-content h1 {
+    color: var(--main-color);
+}
+
+.home-content h3 {
+    color: var(--text-color);
+}
+
+/* About Section */
+.about {
+    background: #ffffff; /* White background for clean look */
+    box-shadow: 0 4px 20px var(--shadow-color);
+}
+
+.about-content h2 {
+    color: var(--highlight-color);
+}
+
+/* Portfolio Section */
+.portfolio {
+    background: linear-gradient(135deg, var(--bg-color), #ffffff); /* Mint green fading to white */
+}
+
+.portfolio h2 {
+    color: var(--main-color);
+}
+
+.portfolio .polaroid {
+    background: #ffffff;
+    border: 2px solid var(--border-color);
+}
+
+/* Contact Section */
+.contact {
+    background: var(--highlight-color); /* Soft blue */
+}
+
+.contact h2 {
+    color: #fff;
+}
+
+.contact input[type="submit"] {
+    background: var(--main-color);
+    color: #fff;
+}
+
+.contact input[type="submit"]:hover {
+    background: var(--accent-color);
+}
+
+/* Footer */
+.footer {
+    background: var(--bg-color); /* Mint green */
+}
+
+.footer .social a {
+    color: var(--text-color);
+}
+
+.footer .social a:hover {
+    color: var(--highlight-color);
+}
+
+/* Home Section */
+.home {
+    background: linear-gradient(135deg, var(--highlight-color), var(--accent-color)); /* Soft gradient */
+}
+
+.home-content h1 {
+    color: var(--main-color);
+}
+
+.home-content h3 {
+    color: var(--text-color);
+}
+
+/* Portfolio Section */
+.portfolio {
+    background: var(--bg-color);
+}
+
+.portfolio h2 {
+    color: var(--main-color);
+}
+
+.portfolio .polaroid {
+    background: #ffffff;
+    border: 2px solid var(--border-color);
+}
+
+/* Contact Section */
+.contact {
+    background: var(--highlight-color);
+}
+
+.contact h2 {
+    color: var(--text-color);
+}
+
+.contact input[type="submit"] {
+    background: var(--main-color);
+    color: #fff;
+}
+
+.contact input[type="submit"]:hover {
+    background: var(--accent-color);
+}
+
+/* Footer */
+.footer {
+    background: var(--bg-color);
+}
+
+.footer .social a {
+    color: var(--text-color);
+}
+
+.footer .social a:hover {
+    color: var(--highlight-color);
+}
+
+
 html {
-    font-size: 62.5%; 
+    font-size: 62.5%;
 }
 
 body {
@@ -201,28 +460,49 @@ header {
 
 .portfolio-content {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 4rem;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Polaroid akan menyesuaikan lebar container */
+    gap: 2rem;
+    padding: 2rem 0;
 }
 
-.portfolio .row img {
-    width: 50%;
-    border-radius: 1.2rem;
-    transition: transform 0.5s ease, box-shadow 0.3s ease;
-    box-shadow: 0 6px 20px var(--shadow-color);
+.portfolio .polaroid {
+    width: 250px; /* Lebar tetap polaroid */
+    height: 350px; /* Tinggi tetap polaroid */
+    background: #fff;
+    border-radius: 1rem;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between; /* Spasi antar elemen */
+    padding: 1rem;
+    margin: auto; /* Tengah di dalam grid */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.portfolio .row img:hover {
-    transform: scale(1.1);
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+.portfolio .polaroid img {
+    width: 100%;
+    height: 60%; /* Bagian atas 60% dari tinggi polaroid */
+    object-fit: cover; /* Gambar menyesuaikan tanpa mengubah proporsi */
+    border-radius: 0.8rem;
+    background: #ddd; /* Latar belakang jika gambar gagal dimuat */
 }
 
-.portfolio .row h4 {
-    font-size: 2.5rem;
+.portfolio .polaroid h4 {
+    font-size: 1.8rem;
+    font-weight: 500;
     color: var(--text-color);
-    margin-top: 1rem;
+    text-align: center;
+    margin: 0.5rem 0;
 }
 
+.portfolio .polaroid:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.3);
+}
+
+
+/* Contact Section Styles */
 .contact {
     background: var(--accent-color);
     padding: 6rem 10%;
